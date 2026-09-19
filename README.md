@@ -22,13 +22,14 @@ I build API-driven applications with **Python, Java and React**, focusing on sec
 
 ## Portfolio at a glance
 
-Three complementary case studies, with source code, tests and engineering documentation.
+Four complementary case studies, with source code, tests and engineering documentation. Try the [live browser game](https://game.ricardoporto.dev/) for an interactive example.
 
 | Project | Business problem | Engineering evidence |
 | --- | --- | --- |
 | [**Resource Lending API**](https://github.com/ricardoportoIE/resource-lending-api) | Manage shared assets, loans and reservation queues | Java/Spring, concurrency control, transactional workflows, Outbox and observability |
 | [**Job Application Tracker**](https://github.com/ricardoportoIE/job-application-tracker) | Organise applications, companies and hiring timelines | Python/FastAPI, user isolation, Terraform and a validated AWS deployment |
 | [**GDA Environmental Reporting**](https://github.com/ricardoportoIE/gda-environmental-reporting-platform) | Submit, locate and review environmental reports | Django/React, PostGIS, access control, end-to-end and accessibility testing |
+| [**Chronicles of Eldoria**](https://github.com/ricardoportoIE/chronicles-of-eldoria-game) · [Play online](https://game.ricardoporto.dev/) | Deliver responsive browser gameplay across desktop and mobile layouts | JavaScript, Canvas 2D, browser input, accessibility checks and automated performance budgets |
 
 ## Featured engineering work
 
@@ -80,16 +81,30 @@ A rebuilt final-year project connecting public reporting with secure staff case 
 
 [Explore the code](https://github.com/ricardoportoIE/gda-environmental-reporting-platform) · [Validation record](https://github.com/ricardoportoIE/gda-environmental-reporting-platform/blob/main/docs/VALIDATION.md) · [Deployment guide](https://github.com/ricardoportoIE/gda-environmental-reporting-platform/blob/main/docs/DEPLOYMENT.md)
 
+### Chronicles of Eldoria
+**JavaScript · Canvas 2D · Three.js · Vite · Vitest · Playwright Core**
+
+[![Quality gate](https://github.com/ricardoportoIE/chronicles-of-eldoria-game/actions/workflows/quality.yml/badge.svg)](https://github.com/ricardoportoIE/chronicles-of-eldoria-game/actions/workflows/quality.yml)
+
+A modernised academic survival game with a playable browser demo, demonstrating modular frontend engineering and measurable quality gates.
+
+- **Architecture and rendering:** ES Modules, independently testable gameplay rules, a frame-rate-independent Canvas loop, collision geometry and vector-based movement.
+- **Interaction and accessibility:** responsive desktop and portrait layouts, keyboard/pointer/touch controls, focus management and automated axe-core checks.
+- **Verification:** Vitest with 100% coverage thresholds for `src/game`, Chromium desktop/mobile viewport journeys, production performance budgets and security checks.
+- **Delivery:** a Vite build hosted on Netlify at a custom domain configured through Cloudflare DNS; a lazily loaded Three.js visual enhancement.
+
+[Play online](https://game.ricardoporto.dev/) · [Explore the code](https://github.com/ricardoportoIE/chronicles-of-eldoria-game) · [Testing strategy](https://github.com/ricardoportoIE/chronicles-of-eldoria-game/blob/main/QUALITY.md) · [CI results](https://github.com/ricardoportoIE/chronicles-of-eldoria-game/actions/workflows/quality.yml)
+
 ## Technical skills demonstrated
 
 | Area | Technologies and practices |
 | --- | --- |
 | **Backend** | Python, Java, FastAPI, Django REST Framework, Spring Boot, Spring Data JPA, Hibernate, REST APIs, OpenAPI |
-| **Frontend** | React, TypeScript, JavaScript, Vite, responsive interfaces, API integration |
+| **Frontend** | React, TypeScript, JavaScript, Vite, ES Modules, Canvas 2D, Three.js enhancements, responsive interfaces, browser input, API integration |
 | **Data** | SQL, PostgreSQL, PostGIS, Redis, SQLAlchemy, Alembic, Flyway, transactions and locking |
 | **Security** | Spring Security, JWT, refresh-token rotation, RBAC, ownership checks, CSRF, least privilege |
-| **Testing** | Pytest, JUnit, MockMvc, Testcontainers, JaCoCo, Vitest, Testing Library, Playwright, axe-core |
-| **Cloud and delivery** | AWS ECS Fargate, RDS, ECR, ALB, ACM, Route 53, Secrets Manager, Terraform, Docker, Nginx, GitHub Actions |
+| **Testing** | Pytest, JUnit, MockMvc, Testcontainers, JaCoCo, Vitest, Testing Library, Playwright, axe-core, browser performance budgets |
+| **Cloud and delivery** | AWS ECS Fargate, RDS, ECR, ALB, ACM, Route 53, Secrets Manager, Terraform, Docker, Nginx, GitHub Actions, Netlify, Cloudflare DNS |
 | **Observability** | Structured logging, correlation IDs, health checks, Micrometer, OpenTelemetry, Prometheus, Grafana, Jaeger |
 | **Engineering practice** | Modular monoliths, state machines, Outbox, idempotency, ADRs, threat modelling and documented trade-offs |
 
